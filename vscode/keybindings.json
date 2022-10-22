@@ -230,10 +230,10 @@
           "overrideWorkspaceSettings": true,
           "values": [ // Note: use the same settings in each values object
             {
-              "editor.inlayHints.enabled": false // sets the inlay hints off
+              "editor.inlayHints.enabled": "off" // sets the inlay hints off
             },
             {
-              "editor.inlayHints.enabled": true // sets the inlay hints on
+              "editor.inlayHints.enabled": "on" // sets the inlay hints on
             }
           ]
         }
