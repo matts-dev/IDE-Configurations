@@ -1,16 +1,4 @@
 // Place your key bindings in this file to overwrite the defaults
-
-//NOTEs:
-
-// ctrl+shift+alt+u failing on ubuntu/linux
-// ctrl+shift+u enables unicode typing on ubuntu by default (language features). 
-// https://superuser.com/questions/358749/how-to-disable-ctrlshiftu
-// ultimately think this need to not use ibus language support. 
-// type language support in unity search, to find the application
-// change it from Ibus to XIM
-// relog or reboot
-// stop ubuntu's ctrl+alt+shit+u issues. 
-
 [
     {
         "key": "ctrl+alt+i",
@@ -213,16 +201,42 @@
         "command":"macros.override_go_to_definition"
     },
     {
-        "key" : "alt+g",
-        "command":"macros.override_go_to_definition"
-    },
-    {
         "key" : "shift+ctrl+alt+e",
         "command":"macros.override_peak_definition"
     },
     {
         "key" : "shift+alt+o",
         "command":"macros.override_quick_open_file"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "-workbench.action.reopenClosedEditor"
+    },
+    {
+        "key": "ctrl+shift+t",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "ctrl+]",
+        "command": "macros.override_jumptobracket"
+    },
+    {
+        //SEE https://github.com/rust-lang/rust-analyzer/issues/1977 for explanation. this is working around VSCode not shipping a way to keybind the ctrl+alt toggling inlay hints for rust.
+        "key": "ctrl+shift+alt+5", // key to press to activate command
+        "command": "settings.cycle", // `settings.cycle` is the command that's actually being run, from the extension `hoovercj.vscode-settings-cycler`
+        "when": "editorTextFocus", // && editorLangId == 'rust'", // this keybinding is only active when (editor is in focus) and (the language is `rust`)
+        "args": { // these are the arguments passed to `settings.cycle`
+          "id": "toggle-inlay-hints", // must be unique
+          "overrideWorkspaceSettings": true,
+          "values": [ // Note: use the same settings in each values object
+            {
+              "editor.inlayHints.enabled": false // sets the inlay hints off
+            },
+            {
+              "editor.inlayHints.enabled": true // sets the inlay hints on
+            }
+          ]
+        }
     },
     
 ]

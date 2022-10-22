@@ -1,4 +1,6 @@
 {
+    // "godot_tools.editor_path": "C:\\Users\\matt\\Desktop\\godot\\Godot_v3.2.2-stable_win64.exe\\Godot_v3.2.2-stable_win64.exe",
+
     //for extension "macros 1.2.1 by geddski"
     //allows creating macros that can have keybinds.
     //this lets me have more than a single keybind for a given action. 
@@ -129,8 +131,9 @@
         "override_find_in_files" : [
             "workbench.action.findInFiles"
         ],
-        
-
+        "override_jumptobracket" : [
+            "editor.action.jumpToBracket"
+        ]
         
     },
 
@@ -165,10 +168,31 @@
         ],
     },
 
-
-    "window.zoomLevel": -1,
+    "godot_tools.editor_path": "C:/Users/matt/Desktop/godot/Godot_v3.3-stable_win64.exe/Godot_v3.3-stable_win64.exe",
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-    "breadcrumbs.enabled": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "liveServer.settings.donotShowInfoMsg": true
+    "python.autoComplete.extraPaths": [
+        "./src",
+        "./src/EnginePkg"
+    ],
+    "python.languageServer": "Pylance",
+    "python.analysis.extraPaths": [
+        "./src",
+        "./src/EnginePkg"
+    ],
+    "python.testing.pytestEnabled": true,
+    "workbench.editor.untitled.hint": "hidden",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "window.zoomLevel": -1,
+    "editor.insertSpaces": false,
+    "rust-analyzer.inlayHints.chainingHints.enable": false,
+    "editor.inlayHints.enabled": false,
+    "rust-analyzer.inlayHints.lifetimeElisionHints.useParameterNames": true
+    //"editor.inlayHints.enabled":"offUnlessPressed", //problem, doesn't let us rebind ctrl+alt
 }
