@@ -192,7 +192,7 @@
     "window.zoomLevel": -1,
     "editor.insertSpaces": false,
     "rust-analyzer.inlayHints.chainingHints.enable": false,
-    "editor.inlayHints.enabled": false,
+    "editor.inlayHints.enabled": "off",
     "rust-analyzer.inlayHints.lifetimeElisionHints.useParameterNames": true
     //"editor.inlayHints.enabled":"offUnlessPressed", //problem, doesn't let us rebind ctrl+alt
 }

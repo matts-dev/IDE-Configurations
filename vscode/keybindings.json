@@ -238,5 +238,9 @@
           ]
         }
     },
-    
+    {
+        //might need to disable this if it tries to debug in other folders. unfortunately have to click the button once for current file to be availabl for debugging.
+        "key": "ctrl+shift+r",
+        "command": "rust-analyzer.debug"
+    },
 ]
