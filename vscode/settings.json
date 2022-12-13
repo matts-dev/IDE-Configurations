@@ -195,4 +195,12 @@
     "editor.inlayHints.enabled": "off",
     "rust-analyzer.inlayHints.lifetimeElisionHints.useParameterNames": true
     //"editor.inlayHints.enabled":"offUnlessPressed", //problem, doesn't let us rebind ctrl+alt
+
+    //How to make VSCode open correct file dialog on linux. https://github.com/microsoft/vscode/issues/50386
+    //tl;dr set environment variable: GTK_USE_PORTAL=1
+    // edit: /etc/environment
+    // add: GTK_USE_PORTAL=1
+    // reboot
+    // NOTE: it seems that sometimes it takes a bit for this to stick. And sometimes it seems to fail to find the browser and opens up a barebone version for x11.
+    // Seems to work after opening up the dolphin explorer, then attempting to open in VSCode.
 }
