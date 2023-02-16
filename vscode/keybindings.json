@@ -221,6 +221,10 @@
         "command": "macros.override_jumptobracket"
     },
     {
+        "key": "ctrl+alt+q",
+        "command": "macros.override_watch"
+    },
+    {
         //SEE https://github.com/rust-lang/rust-analyzer/issues/1977 for explanation. this is working around VSCode not shipping a way to keybind the ctrl+alt toggling inlay hints for rust.
         "key": "ctrl+shift+alt+5", // key to press to activate command
         "command": "settings.cycle", // `settings.cycle` is the command that's actually being run, from the extension `hoovercj.vscode-settings-cycler`

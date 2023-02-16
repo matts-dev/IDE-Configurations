@@ -133,6 +133,9 @@
         ],
         "override_jumptobracket" : [
             "editor.action.jumpToBracket"
+        ],
+        "override_watch" : [
+            "editor.debug.action.selectionToWatch"
         ]
         
     },
@@ -189,11 +192,18 @@
         "default": "right",
         "jupyter-notebook": "left"
     },
-    "window.zoomLevel": -1,
+    "window.zoomLevel": -2,
     "editor.insertSpaces": false,
     "rust-analyzer.inlayHints.chainingHints.enable": false,
     "editor.inlayHints.enabled": "off",
-    "rust-analyzer.inlayHints.lifetimeElisionHints.useParameterNames": true
+    "rust-analyzer.inlayHints.lifetimeElisionHints.useParameterNames": true,
+    "cmake.configureOnOpen": true,
+    "cmake.generator": "Ninja",
+    "clangd.path": "/home/dev_user/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.6/clangd_15.0.6/bin/clangd",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "omnisharp.useModernNet": false,
+    "editor.codeLens": false,
+    "editor.comments.ignoreEmptyLines": false
     //"editor.inlayHints.enabled":"offUnlessPressed", //problem, doesn't let us rebind ctrl+alt
 
     //How to make VSCode open correct file dialog on linux. https://github.com/microsoft/vscode/issues/50386
