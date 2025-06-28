@@ -2,93 +2,184 @@
 [
     {
         "key": "ctrl+alt+i",
-        "command": "macros.override_up"
+        "command": "cursorUp",
+        //"when": "textInputFocus"
     },
     {
         "key": "ctrl+alt+k",
-        "command": "macros.override_down"
+        "command": "cursorDown"
     },
     {
         "key": "ctrl+alt+j",
-        "command": "macros.override_leftword"
+        "command": "cursorWordLeft"
     },
     {
         "key": "ctrl+alt+l",
-        "command": "macros.override_rightword"
+        "command": "cursorWordRight"
     },
+    // {
+    //     "key": "ctrl+alt+i",
+    //     "command": "macros.override_up"
+    // },
+    // {
+    //     "key": "ctrl+alt+k",
+    //     "command": "macros.override_down"
+    // },
+    //  {
+    //     "key": "ctrl+alt+j",
+    //     "command": "macros.override_leftword"
+    // },
+    // {
+    //     "key": "ctrl+alt+l",
+    //     "command": "macros.override_rightword"
+    // },
     {
         "key": "alt+i",
-        "command": "macros.override_up"
+        "command": "cursorUp"
     },
     {
         "key": "alt+k",
-        "command": "macros.override_down"
+        "command": "cursorDown"
     },
     {
         "key": "alt+j",
-        "command": "macros.override_left"
+        "command": "cursorLeft"
     },
     {
         "key": "alt+l",
-        "command": "macros.override_right"
+        "command": "cursorRight"
     },
+    //{
+    //     "key": "alt+i",
+    //     "command": "macros.override_up"
+    // },
+    // {
+    //     "key": "alt+k",
+    //     "command": "macros.override_down"
+    // },
+    // {
+    //     "key": "alt+j",
+    //     "command": "macros.override_left"
+    // },
+    // {
+    //     "key": "alt+l",
+    //     "command": "macros.override_right"
+    // },
     {
         "key": "shift+alt+i",
-        "command": "macros.override_upselect"
+        "command": "cursorUpSelect"
     },
     {
         "key": "shift+alt+k",
-        "command": "macros.override_downselect"
+        "command": "cursorDownSelect"
     },
     {
         "key": "shift+alt+j",
-        "command": "macros.override_leftselect"
+        "command": "cursorLeftSelect"
     },
     {
         "key": "shift+alt+l",
-        "command": "macros.override_rightselect"
+        "command": "cursorRightSelect"
     },
+    // {
+    //     "key": "shift+alt+i",
+    //     "command": "macros.override_upselect"
+    // },
+    // {
+    //     "key": "shift+alt+k",
+    //     "command": "macros.override_downselect"
+    // },
+    // {
+    //     "key": "shift+alt+j",
+    //     "command": "macros.override_leftselect"
+    // },
+    // {
+    //     "key": "shift+alt+l",
+    //     "command": "macros.override_rightselect"
+    // },
     {
-        "key": "shif+ctrl+alt+j",
-        "command": "macros.override_leftselect"
+        "key": "shif+ctrl+alt+j", //this typo was present previously?
+        "command": "cursorWordLeftSelect"
     },
+    // {
+    //     "key": "shif+ctrl+alt+j", //this typo was present previously?
+    //     "command": "macros.override_leftselect"
+    // },
+
+
     {
         "key": "shift+ctrl+alt+l",
-        "command": "macros.override_rightwordselect"
+        "command": "cursorWordRightSelect"
     },
     {
         "key": "shift+ctrl+alt+j",
-        "command": "macros.override_leftwordselect"
+        "command": "cursorWordLeftSelect"
     },
     {
         "key": "shift+ctrl+alt+k",
-        "command": "macros.override_downselect"
+        "command": "cursorDownSelect"
     },
     {
         "key": "shift+ctrl+alt+i",
-        "command": "macros.override_upselect"
+        "command": "cursorUpSelect"
     },
+    // {
+    //     "key": "shift+ctrl+alt+l",
+    //     "command": "macros.override_rightwordselect"
+    // },
+    // {
+    //     "key": "shift+ctrl+alt+j",
+    //     "command": "macros.override_leftwordselect"
+    // },
+    // {
+    //     "key": "shift+ctrl+alt+k",
+    //     "command": "macros.override_downselect"
+    // },
+    // {
+    //     "key": "shift+ctrl+alt+i",
+    //     "command": "macros.override_upselect"
+    // },
 
-
+    
     {
         "key": "shift+ctrl+alt+o",
-        "command": "macros.override_endselect"
+        "command": "cursorEndSelect"
     },
     {
         "key": "shift+ctrl+alt+u",
-        "command": "macros.override_homeselect"
+        "command": "cursorHomeSelect"
     },
     {
         "key": "ctrl+alt+o",
-        "command": "macros.override_end"
+        "command": "cursorEnd"
     },
     {
         "key": "ctrl+alt+u",
-        "command": "macros.override_home"
+        "command": "cursorHome"
     },
+    // {
+    //     "key": "shift+ctrl+alt+o",
+    //     "command": "macros.override_endselect"
+    // },
+    // {
+    //     "key": "shift+ctrl+alt+u",
+    //     "command": "macros.override_homeselect"
+    // },
+    // {
+    //     "key": "ctrl+alt+o",
+    //     "command": "macros.override_end"
+    // },
+    // {
+    //     "key": "ctrl+alt+u",
+    //     "command": "macros.override_home"
+    // },
+
+
+
+
     {
         "key": "shift+ctrl+alt+/",
-        "command": "macros.override_showinexplorer"
+        "command": "revealFileInOS"
     },
     {
         "key": "ctrl+d",
@@ -115,6 +206,39 @@
         "command": "-editor.action.formatSelection",
         "when": "editorHasSelection && editorTextFocus && !editorReadonly"
     },
+
+
+    //{
+    //     "key": "shift+ctrl+alt+/",
+    //     "command": "macros.override_showinexplorer"
+    // },
+    // {
+    //     "key": "ctrl+d",
+    //     "command": "-editor.action.addSelectionToNextFindMatch",
+    //     "when": "editorFocus"
+    // },
+    // {
+    //     "key": "ctrl+d",
+    //     "command": "editor.action.deleteLines",
+    //     "when": "textInputFocus && !editorReadonly"
+    // },
+    // {
+    //     "key": "ctrl+shift+k",
+    //     "command": "-editor.action.deleteLines",
+    //     "when": "textInputFocus && !editorReadonly"
+    // },
+    // {
+    //     "key": "ctrl+shift+alt+f",
+    //     "command": "editor.action.formatSelection",
+    //     "when": "editorHasSelection && editorTextFocus && !editorReadonly"
+    // },
+    // {
+    //     "key": "ctrl+k ctrl+f",
+    //     "command": "-editor.action.formatSelection",
+    //     "when": "editorHasSelection && editorTextFocus && !editorReadonly"
+    // },
+
+
     {
         "key": "ctrl+k s",
         "command": "-workbench.action.files.saveAll"
@@ -128,86 +252,186 @@
         "command": "-workbench.action.files.saveAs"
     },
 
+
+
+
     {
         "key": "ctrl+shift+k",
-        "command": "macros.override_pageDown"
+        "command": "cursorPageDown"
     },
     {
         "key": "ctrl+shift+i",
-        "command": "macros.override_pageUp"
+        "command": "cursorPageUp"
     },
     {
         "key": "alt+shift+r",
-        "command": "macros.override_renameSymbol"
+        //rename symbol / refactor symbol
+        "command": "editor.action.rename"
     },
     {
         "key": "alt+shift+f",
-        "command": "macros.override_find_all_references"
+        //find all references
+        "command": "editor.action.referenceSearch.trigger"
     },
     {
         "key": "ctrl+alt+shift+f",
-        "command": "macros.override_find_in_files"
+        "command": "workbench.action.findInFiles"
     },
     {
         "key": "ctrl+alt+shift+y",
-        "command": "macros.override_back"
+        //back
+        "command": "workbench.action.navigateBack"
     },
     {
         "key": "ctrl+alt+shift+p",
-        "command": "macros.override_forward"
+        //forward
+        "command": "workbench.action.navigateForward"
     },
+    // {
+    //     "key": "ctrl+shift+k",
+    //     "command": "macros.override_pageDown"
+    // },
+    // {
+    //     "key": "ctrl+shift+i",
+    //     "command": "macros.override_pageUp"
+    // },
+    // {
+    //     "key": "alt+shift+r",
+    //     "command": "macros.override_renameSymbol"
+    // },
+    // {
+    //     "key": "alt+shift+f",
+    //     "command": "macros.override_find_all_references"
+    // },
+    // {
+    //     "key": "ctrl+alt+shift+f",
+    //     "command": "macros.override_find_in_files"
+    // },
+    // {
+    //     "key": "ctrl+alt+shift+y",
+    //     "command": "macros.override_back"
+    // },
+    // {
+    //     "key": "ctrl+alt+shift+p",
+    //     "command": "macros.override_forward"
+    // },
     
     //debugging
     {
         "key": "ctrl+alt+w",
-        "command": "macros.override_debugger_continue"
+        "command": "workbench.action.debug.continue"
     },
     {
         "key": "ctrl+alt+s",
-        "command": "macros.override_debugger_step"
+        "command": "workbench.action.debug.stepOver"
     },
     {
         "key": "ctrl+alt+d",
-        "command": "macros.override_debugger_stepinto"
+        "command": "workbench.action.debug.stepInto"
     },
     {
         "key": "ctrl+alt+a",
-        "command": "macros.override_debugger_stepout"
+        "command": "workbench.action.debug.stepOut"
     },
     {
         "key": "ctrl+r",
-        "command": "macros.override_debugger_startexecution"
+        "command": "workbench.action.debug.start"
     },
     {
         "key": "ctrl+f2",
-        "command": "macros.override_debugger_stopexecution"
+        "command": "workbench.action.debug.stop"
     },
     {
         "key" : "shift+ctrl+b",
-        "command":"macros.override_debugger_togglebreakpoint"
+        "command":"editor.debug.action.toggleBreakpoint"
     },
+    // {
+    //     "key": "ctrl+alt+w",
+    //     "command": "macros.override_debugger_continue"
+    // },
+    // {
+    //     "key": "ctrl+alt+s",
+    //     "command": "macros.override_debugger_step"
+    // },
+    // {
+    //     "key": "ctrl+alt+d",
+    //     "command": "macros.override_debugger_stepinto"
+    // },
+    // {
+    //     "key": "ctrl+alt+a",
+    //     "command": "macros.override_debugger_stepout"
+    // },
+    // {
+    //     "key": "ctrl+r",
+    //     "command": "macros.override_debugger_startexecution"
+    // },
+    // {
+    //     "key": "ctrl+f2",
+    //     "command": "macros.override_debugger_stopexecution"
+    // },
+    // {
+    //     "key" : "shift+ctrl+b",
+    //     "command":"macros.override_debugger_togglebreakpoint"
+    // },
 
     //code navigation
     {
         "key" : "shift+alt+s",
-        "command":"macros.override_find_symbols"
+        "command":"workbench.action.showAllSymbols"
     },
     {
         "key" : "alt+m",
-        "command":"macros.override_go_to_symbol"
+        "command":"workbench.action.gotoSymbol"
     },
     {
         "key" : "alt+ctrl+e",
-        "command":"macros.override_go_to_definition"
+        "command":"editor.action.goToDeclaration"
     },
     {
         "key" : "shift+ctrl+alt+e",
-        "command":"macros.override_peak_definition"
+        "command":"editor.action.previewDeclaration"
     },
     {
         "key" : "shift+alt+o",
-        "command":"macros.override_quick_open_file"
+        "command":"workbench.action.quickOpen"
     },
+    {
+        "key": "ctrl+]",
+        "command": "editor.action.jumpToBracket"
+    },
+    {
+        "key": "ctrl+alt+q",
+        "command": "editor.debug.action.selectionToWatch"
+    },
+    // {
+    //     "key" : "shift+alt+s",
+    //     "command":"macros.override_find_symbols"
+    // },
+    // {
+    //     "key" : "alt+m",
+    //     "command":"macros.override_go_to_symbol"
+    // },
+    // {
+    //     "key" : "alt+ctrl+e",
+    //     "command":"macros.override_go_to_definition"
+    // },
+    // {
+    //     "key" : "shift+ctrl+alt+e",
+    //     "command":"macros.override_peak_definition"
+    // },
+    // {
+    //     "key" : "shift+alt+o",
+    //     "command":"macros.override_quick_open_file"
+    // },
+    // {
+    //     "key": "ctrl+]",
+    //     "command": "macros.override_jumptobracket"
+    // },
+    // {
+    //     "key": "ctrl+alt+q",
+    //     "command": "macros.override_watch"
+    // },
+
     {
         "key": "ctrl+shift+t",
         "command": "-workbench.action.reopenClosedEditor"
@@ -215,14 +439,6 @@
     {
         "key": "ctrl+shift+t",
         "command": "workbench.action.terminal.focus"
-    },
-    {
-        "key": "ctrl+]",
-        "command": "macros.override_jumptobracket"
-    },
-    {
-        "key": "ctrl+alt+q",
-        "command": "macros.override_watch"
     },
     {
         //SEE https://github.com/rust-lang/rust-analyzer/issues/1977 for explanation. this is working around VSCode not shipping a way to keybind the ctrl+alt toggling inlay hints for rust.
@@ -247,4 +463,5 @@
         "key": "ctrl+shift+r",
         "command": "rust-analyzer.debug"
     },
+
 ]
