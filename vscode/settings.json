@@ -199,12 +199,15 @@
     "rust-analyzer.inlayHints.lifetimeElisionHints.useParameterNames": true,
     "cmake.configureOnOpen": true,
     "cmake.generator": "Ninja",
-    "clangd.path": "/home/dev_user/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.6/clangd_15.0.6/bin/clangd",
-    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.path": "c:\\Users\\dev-w\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\20.1.8\\clangd_20.1.8\\bin\\clangd.exe",
     "omnisharp.useModernNet": false,
     "editor.codeLens": false,
-    "editor.comments.ignoreEmptyLines": false
+    "editor.comments.ignoreEmptyLines": false,
     //"editor.inlayHints.enabled":"offUnlessPressed", //problem, doesn't let us rebind ctrl+alt
+
+    "workbench.editor.revealIfOpen": true, // make alt+o, use the opened header/cpp file
+    "C_Cpp.intelliSenseEngine": "disabled"
+
 
     //How to make VSCode open correct file dialog on linux. https://github.com/microsoft/vscode/issues/50386
     //tl;dr set environment variable: GTK_USE_PORTAL=1
