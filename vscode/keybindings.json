@@ -524,7 +524,7 @@
         "command": "workbench.action.findInFiles"
     },
     {
-        "key": "ctrl+shift+alt+k ctrl+shift+alt+f",
+        "key": "ctrl+k ctrl+shift+alt+f",
         "command": "editor.action.formatDocument",
         "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
     },
