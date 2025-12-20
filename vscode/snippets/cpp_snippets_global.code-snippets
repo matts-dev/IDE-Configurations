@@ -17,6 +17,20 @@
 	// 	"description": "Log output to console"
 	// }
 
+	"clangoff": {"scope": "c,cpp", "prefix": "clangoff", "body": [
+			"// clang-format off",
+		],"description": "disaable clang format."
+	},
+	"clangon": {"scope": "c,cpp", "prefix": "clangon", "body": [
+			"// clang-format on",
+		],"description": "reenable clang format."
+	},
+	"clangoffblock": {"scope": "c,cpp", "prefix": "clangoffblock", "body": [
+			"// clang-format off",
+			"// clang-format on",
+		],"description": "reenable clang format."
+	},
+
 	"Generate class header": {
 		"scope": "c,cpp",
 		"prefix": "classheader-filename",
@@ -71,6 +85,9 @@
 			"public:",
 			"\t${TM_FILENAME_BASE}();",
 			"\tvirtual ~${TM_FILENAME_BASE}();",
+			"",
+			"\tstatic void _bind_methods(){}",
+			"",
 			"private:  ",
 			"};",
 			"",
@@ -210,8 +227,8 @@
 			"//copy to cpp-file",
 			"ClassDB::bind_method(D_METHOD(SYMBOL_AS_STR(set_${prop_name}), \"${in_param}\"), &${TM_FILENAME_BASE}::set_${prop_name});",
 			"ClassDB::bind_method(D_METHOD(SYMBOL_AS_STR(get_${prop_name})), &${TM_FILENAME_BASE}::get_${prop_name});",
-			"ADD_PROPERTY( PropertyInfo(Variant::${FLOAT}, SYMBOL_AS_STR(${prop_name})",
-			"\t, PROPERTY_HINT_RESOURCE_TYPE, SYMBOL_AS_STR(${prop_type}))",
+			"ADD_PROPERTY( PropertyInfo(Variant::${FLOAT}, SYMBOL_AS_STR(${prop_name}))",
+			//"\t, PROPERTY_HINT_RESOURCE_TYPE, SYMBOL_AS_STR(${prop_type}))", //don't think this is needed for POD.
 			"\t, SYMBOL_AS_STR(set_${prop_name})",
 			"\t, SYMBOL_AS_STR(get_${prop_name}));",
 		],"description": "full boilerplate for plain old data type."
@@ -248,5 +265,5 @@
 			"\t, SYMBOL_AS_STR(get_${prop_name}));",
 		],"description": "full boilerplate plain resource array in godot."
 	},
-	
+
 }

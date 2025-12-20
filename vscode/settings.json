@@ -206,7 +206,13 @@
     //"editor.inlayHints.enabled":"offUnlessPressed", //problem, doesn't let us rebind ctrl+alt
 
     "workbench.editor.revealIfOpen": true, // make alt+o, use the opened header/cpp file
-    "C_Cpp.intelliSenseEngine": "disabled"
+    "C_Cpp.intelliSenseEngine": "disabled",
+
+    "[cpp]": {
+        //fix clangd not showing function nameo n folding, if not using the newline {, then the foldingmodel will probably work better for this
+        "editor.stickyScroll.defaultModel": "outlineModel",
+    },
+
 
 
     //How to make VSCode open correct file dialog on linux. https://github.com/microsoft/vscode/issues/50386
